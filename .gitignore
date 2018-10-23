@@ -1,0 +1,6 @@
+Pipfile.lock
+UCI HAR Dataset/
+dataset.zip
+dataset1.zip
+**/*.swp
+**/*.pyc
