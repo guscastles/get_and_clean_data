@@ -1,6 +1,9 @@
-import pytest
+"""
+Test module for tidy.data_io, fetch and write functions
+"""
 import os
 import shutil as sh
+import pytest
 import tidy.data_io as io
 from . import SOURCE_FOLDER
 
@@ -42,4 +45,3 @@ def test_read_subjects():
 def test_read_activities():
     activities = io.fetch_additional_data(SOURCE_FOLDER, 'activity_labels.txt')
     assert activities.shape == (6, 2)
-
